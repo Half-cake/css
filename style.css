@@ -15,10 +15,17 @@ p {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: repeat (3, 1fr); 
+	grid-template-columns: 1fr 1fr;
 	border: 1px solid #f76707;
 }
 
 .box {
 	box-sizing: border-box;
+}
+
+.photo {
+		width: 200px;
+		height: 200px;
+		background: grey;
+		margin: 20px 20px 20px 20px;
 }

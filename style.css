@@ -8,6 +8,10 @@ h2 {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+h3 {
+	color: silver;
+}
+
 p {
 	color: #2d0000;
 	margin-left: 20px;
@@ -17,13 +21,19 @@ p {
 
 .wrapper {
 	display: grid;
+	grid-gap: 0.8em;
 	grid-template-columns: 1fr 1fr;
-	border: 1px solid #f76707;
+	/*border: 1px solid #f76707;*/
 }
 
+@media screen and (max-width: 600px) {
+  		.wrapper {grid-template-columns: 1fr;}
+		}
+
 .box {
-	align-content: stretch;
-	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
 }
 
 .photo {
@@ -31,4 +41,9 @@ p {
 		height: 200px;
 		background: grey;
 		margin: 20px 20px 20px 20px;
+}
+
+.more {
+	margin-left: 10px;
+	font-size: 0.8em;
 }
